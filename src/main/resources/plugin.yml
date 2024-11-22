@@ -1,0 +1,18 @@
+name: SchematicPlacer
+version: 1.0
+main: com.example.schematicplacer.SchematicPlacer
+api-version: 1.16
+author: rustex
+description: Плагин для загрузки и размещения схематик в Minecraft
+
+commands:
+  loadschematic:
+    description: Загружает и размещает схематику в указанном месте
+    usage: /loadschematic <имя_файла> [угол_поворота]
+    aliases: [ls, schem]
+    permission: schematicplacer.load
+
+permissions:
+  schematicplacer.load:
+    description: Разрешает загружать и размещать схематики
+    default: op
